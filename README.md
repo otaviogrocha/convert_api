@@ -1,4 +1,6 @@
-#Teste Estagiários Conversion:
+![alt text](https://github.com/Gustavo341/Teste_para_estagiarios/blob/main/images/logo-branco.svg "Logo Converssion")
+
+# Teste Estagiários Conversion:
 
 **Objetivo**:
 
