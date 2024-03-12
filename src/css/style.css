@@ -1,0 +1,169 @@
+* {
+    font-family: "Manrope";
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    display: flex; /* Para alinhar itens horizontalmente */
+    justify-content: space-between;/* Para espaçamento igual entre os itens */
+    align-items: center; /* Para alinhar verticalmente os itens */
+    z-index: 1;
+    padding: 20px;
+}
+
+header img {
+    height: 40px; /* Altura da imagem do logotipo */
+}
+
+header nav a {
+    color: grey;
+    text-decoration: none;
+    margin-right: 20px;/* Espaçamento entre os links */
+}
+
+header .cta {
+    background-color: var(--cor_botao);
+    color: #fff;/* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;/* Espaçamento interno do botão */
+    border-radius: 5px;/* Borda arredondada */
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    margin: 5vw;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15%;
+    margin: 5vw;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--fonte_azul);
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.title_2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    align-items: center;
+}
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0 9px;
+    margin-right: 2%;
+}
+
+label {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 10px;  /* Ajuste conforme necessário */
+    pointer-events: none; /* A label não será clicável nem selecionável */
+    transition: all 0.3s ease;/* Adiciona uma transição suave para a animação */
+}
+
+.search_button {
+    background-color: var(--fonte_azul);
+    color: white;
+    border: none;
+    padding: 10px 30px;/* Espaçamento interno do botão */
+    border-radius: 4px;/* Borda arredondada */
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    /* border: 1px solid black; */
+    /* flex-wrap: wrap; */
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 15%;
+}
+
+.catContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.left{
+    margin-right: 1%;
+}
+
+.right{
+    margin-left: 1%;
+}
+
+.catImage{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+    border: 1px solid blue;
+}
+
+#service {
+    background-color: var(--fonte_cinza);
+    color: white;
+}
+
+.card {
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 100px 0;
+    background-color: var(--fonte_azul);
+    color: white;
+}
+
+
+
+:root {
+    --fonte_azul: #1649ff;  /* Definindo uma variável de cor */
+    --fonte_cinza: #171717;
+    --cor_botao: #00bfa5;
+}
