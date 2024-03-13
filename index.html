@@ -13,77 +13,98 @@
 
 <body>
     <header>
-        <img src="src/images/logo-conversion.svg" alt="LOGO">
-        <nav>
-            <a href="#cat">Busca por gatos</a>
-            <a href="service">Conheça nossos serviços</a>
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="src/images/logo-conversion.svg" alt="LOGO">
+            </a>
+            <nav id="menu" class="menu">
+                <a href="#cat">Busca por gatos</a>
+                <a href="#service">Conheça nossos serviços</a>
+            </nav>
             <button class="cta">Agendar Reunião</button>
-        </nav>
+            
+            
+            <div class="mobile-menu">
+                <a href="#cat">Busca por gatos</a>
+                <a href="#service">Conheça nossos serviços</a>
+                <div class="mobile-cta">
+                    <button class="cta">Agendar Reunião</button>
+                </div>
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <button><img src="src/images/menu mobile.svg"></button>
+            </div>
+        </div>    
     </header>
     <main>
         <section class="banner">
             <div class="titles">
                 <h1 class="title">Teste para estagiários de DEV</h1>
                 <h1 class="title_2">Sistema de busca de fotos de gatos</h1>
-            </div>  
+            </div>
         </section>
         <section id="cat">
             <div class="search">
-                <input type="text" name="cat" class="input">
-                <label for="cat">Pesquisar Gato</label>
+                <input type="text" name="cat_input" id ="cat_input" class="input">
+                <label for="cat_input">Pesquisar Gato</label>
                 <button type="submit" class="search_button">Pesquisar</button>
             </div>
             <div class="container">
-                <!-- TO DO -->
                 <div class="catContainer left">
                     <div class="catImage">
-                        <p>CATS HERE</p>
+                        <img src="" alt="" class="kittyImage">
                     </div>
                 </div>
                 <div class="catContainer right">
                     <div class="catImage">
-                        <p>CATS HERE</p>
+                        <img src="" alt="" class="kittyImage">                        
                     </div>
                 </div>
             </div>
         </section>
         <section id="service">
-            <!-- TO DO -->
-            <h1>Conheça nossos serviços</h1>
-            <div class="card">
-                <img src="src/images/link-building-4.svg" alt="link building">
-                <h3>Link Building 4.0</h3>
-                <p> Somos uma assessoria de imprensa com foco em criar pautas para conquistar backlinks de veículos com
-                    autoridade</p>
-                <a href="#" class="more">Saiba Mais</a>
+            <div class="services">
+                <h1 class="service_title">Conheça nossos serviços</h1>
+                <div class="card_container">
+                    <div class="card">
+                        <img src="src/images/link-building-4.svg" alt="link building">
+                        <h3>Link Building 4.0</h3>
+                        <p> Somos uma assessoria de imprensa com foco em criar pautas para conquistar backlinks de
+                            veículos com
+                            autoridade</p>
+                        <a href="#" class="more">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/mdi_head-lightbulb-outline.svg" alt="inbound SEO growth chart">
+                        <h3>Inbound SEO</h3>
+                        <p> Estratégia e execução de conteúdo para gerar tráfego qualificado.</p>
+                        <a href="#" class="more">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/data-driven-pr-1.svg" alt="e-commerce seo megaphone">
+                        <h3>E-commerce SEO</h3>
+                        <p> Aumente a visibilidade de seu e-commerce com as estratégias de SEO validadas por grandes
+                            e-commerces.</p>
+                        <a href="#" class="more">Saiba Mais</a>
+                    </div>
+        
+                    <div class="card">
+                        <img src="src/images/Edit.svg" alt="growth content data analysis">
+                        <h3>Growth Content </h3>
+                        <p> Novo serviço de marketing de conteúdo orientado a gerar maior tráfego qualificado de busca
+                            orgânica.
+                        </p>
+                        <a href="#" class="more">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/strategic-seo-1.svg" alt="Squad SEO pie chart">
+                        <h3>Squad de SEO</h3>
+                        <p>Conte com um time dedicado de profissionais multidisciplinares por um mesmo objetivo.</p>
+                        <a href="#" class="more">Saiba Mais</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="src/images/mdi_head-lightbulb-outline.svg" alt="inbound SEO growth chart">
-                <h3>Inbound SEO</h3>
-                <p> Estratégia e execução de conteúdo para gerar tráfego qualificado.</p>
-                <a href="#" class="more">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <img src="src/images/data-driven-pr-1.svg" alt="e-commerce seo megaphone">
-                <h3>E-commerce SEO</h3>
-                <p> Aumente a visibilidade de seu e-commerce com as estratégias de SEO validadas por grandes
-                    e-commerces.</p>
-                <a href="#" class="more">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <img src="src/images/Edit.svg" alt="growth content data analysis">
-                <h3>Growth Contente </h3>
-                <p> Novo serviço de marketing de conteúdo orientado a gerar maior tráfego qualificado de busca orgânica.
-                </p>
-                <a href="#" class="more">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <img src="src/images/strategic-seo-1.svg" alt="Squad SEO pie chart">
-                <h3>Squad de SEO</h3>
-                <p>Conte com um time dedicado de profissionais multidisciplinares por um mesmo objetivo.</p>
-                <a href="#" class="more">Saiba Mais</a>
-            </div>
-
         </section>
     </main>
     <footer>
