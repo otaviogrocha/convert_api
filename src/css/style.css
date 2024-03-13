@@ -1,14 +1,14 @@
 * {
-    font-family: "Manrope"; /**/
+    font-family: "Manrope"; /* Definir fonte global*/
     font-style: normal;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 16px;
-    margin: 0 auto;
+    margin: 0 auto;  /* Margin 0 para a pagina toda*/
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Ocultando barra horizontal melhorando a UX */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,7 +23,7 @@ body {
     display: flex; 
     justify-content: space-between;  /* Para espaçamento igual entre os itens */
     align-items: center; 
-    width: 100vw;
+    width: 100vw; /* Largura total para o cabeçalho */
     z-index: 1;
     margin: 20px 0;
     padding-bottom: 20px;
@@ -32,7 +32,7 @@ body {
 }
 
 .header .logo{
-    margin-left: 24%;    
+    margin-left: 24%;    /* Ajustando posição da logo com margin*/
 }
 
 .header .logo > img {
@@ -64,11 +64,11 @@ body {
     padding: 10px 35px;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 25%;
+    margin-right: 25%; /* Ajustando posição do botao cta com margin*/
 }
 
 .mobile-menu-icon{
-    display: none;
+    display: none; /* Ocultando menu mobile no desktop */
     margin-right: 5%;
 }
 
@@ -82,14 +82,14 @@ body {
     cursor: pointer;
 }
 
-.mobile-menu{
+.mobile-menu{ /* Ocultando menu mobile no desktop */
     display: none;
     padding-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Ativando propriedades do menu mobile com o @Media query*/
 
-    .header{
+    .header{ /* Alterando propriedades do header para otimizar UX mobile */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -103,7 +103,7 @@ body {
         margin-left: 5%;   
     }
 
-    .header .cta{
+    .header .cta{ /* Ocultando a exibição dos elementos desktop */
         display: none;
     }
     
@@ -124,7 +124,7 @@ body {
     }
 
     .mobile-menu a:hover{
-        color: var(--fonte_azul);
+        color: var(--fonte_azul); 
     }
 
     .mobile-menu .cta{
@@ -141,7 +141,7 @@ body {
         margin: 0;
     }
 
-    .open{
+    .open{ /* Propriedade que possibilita a utilização do menu hamburguer */
         display: block;
     }
 }
@@ -150,18 +150,18 @@ body {
 
 main {
     flex: 1;
-    margin: 0 5vw;     
+    margin: 0 5vw;     /* Centralizar conteudo do site */
 }
 
 .banner{
     display: flex;
     justify-content: center;
-    background-image: url('/src/images/waves.png');
+    background-image: url('/src/images/waves.png'); /* Textura do layout*/
     background-size: contain;
     background-color: rgba(255, 255, 255, 0.692);
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; /* Alterar cor da textura*/
     background-position: center;
-    margin-left: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw); /* Esticando conteúdo do site, mantendo elementos no centro */
     margin-right: calc(50% - 50vw); 
 }
 
@@ -177,7 +177,7 @@ main {
 .title {
     font-size: 50px;
     font-weight: bold;
-    color: var(--fonte_azul);
+    color: var(--fonte_azul); /* Alterar cor do titulo 1 segundo layout */
     margin-bottom: 0;
     align-items: center;
 }
@@ -192,30 +192,31 @@ main {
 
 .search {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Posicionando input e botão de pesquisa*/
     position: relative;
     margin-bottom: 2%;
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 100%; /* Input ocupar todo espaço possível */
     padding: 0 9px;
     margin-right: 2%;
 }
 
 input[type="text"]:focus {
-    outline: var(--cor_botao);
+    outline: var(--cor_botao); /* Mudar cor quando acionando para melhorar UX */
 }
+
+/*---------- Posicionando label dentro do input ---------*/
 
 input[type="text"]:placeholder-shown + label {
     opacity: 0;
 }
 
-
 label {
     position: absolute;
-    top: 10px; /* Ajuste conforme necessário */
-    left: 10px;  /* Ajuste conforme necessário */
+    top: 10px; 
+    left: 10px; 
     pointer-events: none; /* A label não será clicável nem selecionável */
 }
 
@@ -223,15 +224,15 @@ label {
     background-color: var(--fonte_azul);
     color: white;
     border: none;
-    padding: 10px 30px;/* Espaçamento interno do botão */
-    border-radius: 4px;/* Borda arredondada */
+    padding: 10px 30px; /* Espaçamento interno do botão */
+    border-radius: 4px;
     cursor: pointer;
 }
 
 
 .container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Manter elementos abaixo, quando não houver espaço*/
     flex-direction: row;
     margin-top: 3%;
     /* margin-left: 4vw;
@@ -245,24 +246,24 @@ label {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    /* height: 620px;
-    width: 510px; */
-    height: 590px;
+    /* Definir tamanho para o container do card de gatos*/
+    height: 590px; 
     width: 440px;
     margin: 15px 0px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.336); 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.336); /* Borda ao container */
     border-radius: 5px;
 }
 
 .left{
-    margin-right: 12px;
+    margin-right: 12px; /* Definir espaçamento entre o card da esquerda*/
 }
 
 .right{
+    /* Definir espaçamento entre o card da direita*/
     margin-left: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Media query para posicionar os cards em mobile, alterando o tamanho e tirando as margens. */
     .catContainer{
         height: 590px;
         width: 380px;
@@ -277,7 +278,7 @@ label {
 }
 
 
-
+/* Definir tamanho e posicionamento das imagens da API*/
 .catImage{
     max-width: 400px;
     display: flex;
@@ -286,10 +287,11 @@ label {
     margin: 8%;
 }
 
+/* Classe respectiva a tag IMG para posicionar imagem*/
 .kittyImage{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Manter proporçao das imagens*/
 }
 
 .services {
@@ -300,8 +302,9 @@ label {
     align-items: center;
     /* width: 100vw; */
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: calc(50% - 50vw);
+    flex-direction: column; /* Manter conteudo verticalmente*/
+    /* Utilizar todo o espaço horizontal mantendo elementos centralizados*/
+    margin-left: calc(50% - 50vw); 
     margin-right: calc(50% - 50vw); 
     padding-bottom: 10%;
 }
@@ -315,13 +318,14 @@ label {
 
 .card_container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Responsividade dos cards*/
     justify-content: center;
     gap: 20px; /* Espaçamento entre os cards */
-    max-width: 70%;
+    max-width: 70%;  /*Responsividade dos cards, mantendo sempre 3 cards por linha de acordo com o layout*/
     margin: 0;
 }
 
+/*Propriedade dos cards*/
 .card {
     background-color: white;
     height: 350px;
@@ -332,7 +336,7 @@ label {
 }
 
 .card:hover{
-    background-color:var(--cor_amarela);
+    background-color:var(--cor_amarela); /*Hover amarelo de acordo com layout*/
     cursor: pointer;
 }
 
@@ -365,7 +369,7 @@ label {
     cursor: pointer;
     text-decoration: none;
 }
-.card img {
+.card img { /* propriedade dos SVG's */
     display: flex;
     justify-content: center;
     max-width: 100%;
@@ -387,9 +391,9 @@ footer {
     color: white;
 }
 
-
+/* Definindo uma variável de cores para reusabilidade*/
 :root {
-    --fonte_azul: #1649ff;  /* Definindo uma variável de cor */
+    --fonte_azul: #1649ff;  
     --fonte_cinza: #3d3d3d;
     --background_cinza: #171717;
     --cor_botao: #00bfa5;
@@ -400,25 +404,25 @@ footer {
 
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
     .card_container {
-        max-width: 80%;
+        max-width: 80%; /* Manter responsabilidade para notebooks, mantendo 3 cards por linha de acordo com o layout */
     }
 
     .header .cta {
-        margin-right: 18%;
+        margin-right: 18%; /* alterando posicionamento do botão de acordo com o dispositivo*/
     }
 
     .header .logo{
-        margin-left: 13%;    
+        margin-left: 13%; /* alterando posicionamento da logo de acordo com o dispositivo*/  
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .header .cta {
-        width: auto;
-        margin-right: 5%;
+        width: auto; /* alterando tamanho do botão de acordo com o dispositivo*/
+        margin-right: 5%; /* alterando posicionamento do botão de acordo com o dispositivo*/
     }
 
     .header .logo{
-        margin-left: 5%;    
+        margin-left: 5%;  /* alterando posicionamento da logo de acordo com o dispositivo*/
     }
 }
