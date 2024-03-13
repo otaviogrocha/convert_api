@@ -1,6 +1,7 @@
 # Convert_API
-Teste de desenvolvimento Convert SEO
-
+Teste de desenvolvimento Convert SEO, desenvolvido com base no repositório e com layout pré-definido.
+<br>
+<br>
 ## Planejamento:
 
 - Git clone images e repo
@@ -15,13 +16,13 @@ Teste de desenvolvimento Convert SEO
 - Adicionando containers para melhorar manipulação dos elementos
 
 
-JS:
+### JS:
 - Consumir api;
 - Ocultar label ao digitar;
 - Pesquisa de gatos pela raça;
 - Menu mobile
 
-CSS:
+### CSS:
 
 - Manter boa pratica de manipular classes ao inves de elementos puros
 - Import google fonts
@@ -31,7 +32,7 @@ CSS:
 - Max-width na seção services, definindo número máximo de cards de serviços por linha;
 - object fit (cover) nas fotos, mantendo a proporção.
 
-### Funcionalidades:
+## Funcionalidades:
 
 - Menu de rolagem para as seções do site a partir do menu nav;
 - Barra de pesquisa de gatos
