@@ -46,4 +46,4 @@ Teste de desenvolvimento Convert SEO, desenvolvido com base no repositório e co
 ### Instruções para rodar o código:
 
 - Extensão live server (Visual Studio Code)
-- Github Pages: [Live demo]()
+- Github Pages: [Live demo](https://otaviogrocha.github.io/convert_api/)
